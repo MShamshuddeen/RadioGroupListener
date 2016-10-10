@@ -16,14 +16,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        rg = (RadioGroup)findViewById(R.id.rg);
-        rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                rb = (RadioButton)findViewById(group.getCheckedRadioButtonId());
-
-                Toast.makeText(MainActivity.this, "Checked RadioButton text : "+rb.getText(), Toast.LENGTH_SHORT).show();
-            }
-        });
+       
     }
 }
